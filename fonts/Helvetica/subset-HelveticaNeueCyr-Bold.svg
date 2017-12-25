@@ -1,0 +1,61 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<metadata>
+Created by FontForge 20170731 at Tue Aug 29 14:39:48 2006
+ By ,,,
+Copyrighted (c) 1981, 1997 by and the property of Linotype-Hell AG and/or its subsidiaries. All Rights Reserved. All Cyrillic characters designed by DoubleAlex. Helvetica is a registered Trademark of Linotype-Hell AG and/or its subsidiaries.
+</metadata>
+<defs>
+<font id="HelveticaNeueCyr-Bold" horiz-adv-x="556" >
+  <font-face 
+    font-family="HelveticaNeueCyr"
+    font-weight="700"
+    font-stretch="normal"
+    units-per-em="1000"
+    panose-1="2 0 8 3 5 0 0 2 0 4"
+    ascent="800"
+    descent="-200"
+    bbox="11 -13 542 706"
+    underline-thickness="50"
+    underline-position="-150"
+    unicode-range="U+0020-0039"
+  />
+<missing-glyph horiz-adv-x="1000" 
+ />
+    <glyph glyph-name=".notdef" horiz-adv-x="1000" 
+ />
+    <glyph glyph-name=".null" horiz-adv-x="0" 
+ />
+    <glyph glyph-name="nonmarkingreturn" horiz-adv-x="333" 
+ />
+    <glyph glyph-name="space" unicode=" " horiz-adv-x="278" 
+ />
+    <glyph glyph-name="zero" unicode="0" 
+d="M279 704q58 0 103.5 -22t73.5 -57t46.5 -83t25.5 -96t7 -101q0 -167 -68 -262t-187 -95q-122 0 -190.5 94.5t-68.5 262.5q0 67 13 126.5t41 114t80.5 86.5t123.5 32zM278 587q-28 0 -49 -12t-33.5 -35.5t-20 -45t-10.5 -56t-3.5 -52.5t-0.5 -48q0 -235 118 -235
+q116 0 116 242q0 125 -28 183.5t-89 58.5z" />
+    <glyph glyph-name="one" unicode="1" 
+d="M396 700v-700h-151v455h-170v105h18q159 0 186 140h117z" />
+    <glyph glyph-name="two" unicode="2" 
+d="M528 123v-123h-513q1 47 12.5 86.5t27 66.5t47.5 57t56.5 48t71.5 50q6 4 32 21t36 24t30 24.5t28.5 30.5t16.5 32.5t8 40.5q0 46 -27.5 73.5t-72.5 27.5q-108 0 -114 -152h-136v15q0 119 69 189.5t186 70.5q106 0 172 -59.5t66 -154.5q0 -77 -35 -123t-110 -97
+q-10 -7 -37 -24.5t-42.5 -28.5t-37.5 -28t-38 -33.5t-27 -33.5h331z" />
+    <glyph glyph-name="three" unicode="3" 
+d="M32 471q4 109 68 171.5t174 62.5q104 0 168.5 -53.5t64.5 -138.5q0 -51 -26.5 -88.5t-71.5 -49.5q58 -14 91 -56.5t33 -104.5q0 -100 -72.5 -163.5t-187.5 -63.5q-119 0 -189 66t-70 178v10h137q1 -65 31.5 -99.5t87.5 -34.5q52 0 84 29.5t32 76.5q0 55 -35.5 79.5
+t-91.5 24.5q-21 0 -35 -1v100q11 -1 24 -1q122 0 122 88q0 40 -26.5 64t-70.5 24q-50 0 -77.5 -31t-28.5 -89h-135z" />
+    <glyph glyph-name="four" unicode="4" 
+d="M539 279v-118h-94v-161h-132v161h-300v131l304 410h128v-423h94zM313 279v260l-186 -260h186z" />
+    <glyph glyph-name="five" unicode="5" 
+d="M492 694v-121h-287l-27 -152q49 49 129 49q101 0 162 -63t61 -166q0 -110 -74 -181t-190 -71q-110 0 -179.5 56.5t-75.5 161.5h140q5 -46 36.5 -74.5t78.5 -28.5q53 0 87 37.5t34 96.5t-33 94t-89 35q-67 0 -105 -58h-127l68 385h391z" />
+    <glyph glyph-name="six" unicode="6" 
+d="M524 518h-135q-20 79 -94 79q-117 0 -133 -208q58 79 156 79q96 0 157.5 -65t61.5 -166q1 -109 -69.5 -179t-179.5 -70q-124 0 -194 91.5t-70 255.5q0 173 73 271.5t200 98.5q95 0 154.5 -49t72.5 -138zM285 362q-48 0 -79 -37t-31 -93q0 -57 31 -93t80 -36t81 37t32 93
+t-32 92.5t-82 36.5z" />
+    <glyph glyph-name="seven" unicode="7" 
+d="M515 694v-117q-116 -127 -168.5 -261.5t-62.5 -315.5h-147q0 126 71.5 299.5t162.5 266.5h-334v128h478z" />
+    <glyph glyph-name="eight" unicode="8" 
+d="M146 372q-50 17 -76.5 54.5t-26.5 90.5q0 82 67 135.5t168 53.5q102 0 168.5 -53.5t66.5 -135.5q0 -111 -102 -145q61 -15 96 -60.5t35 -110.5q0 -96 -72.5 -154.5t-191.5 -58.5t-191 58.5t-72 154.5q0 65 35 110.5t96 60.5zM278 599q-47 0 -76 -25t-29 -66
+q0 -43 29 -68.5t77 -25.5q49 0 77.5 25.5t28.5 68.5t-28.5 67t-78.5 24zM275 321q-52 0 -85 -31t-33 -80q0 -51 33.5 -82.5t87.5 -31.5q55 0 88.5 31t33.5 82q0 50 -34.5 81t-90.5 31z" />
+    <glyph glyph-name="nine" unicode="9" 
+d="M29 176h135q17 -80 96 -80q37 0 62.5 20t38.5 56t19 65.5t9 68.5q-57 -81 -150 -81q-97 0 -159.5 65t-62.5 166q0 107 72 178.5t180 71.5q70 0 122.5 -29.5t81.5 -79.5t43 -108t14 -124q0 -68 -14 -131t-43.5 -120t-84.5 -91.5t-128 -34.5q-96 0 -158 51t-73 137z
+M266 589q-47 0 -78.5 -36.5t-31.5 -91.5q0 -56 31 -92t80 -36q48 0 79.5 36t31.5 91t-32 92t-80 37z" />
+  </font>
+</defs></svg>

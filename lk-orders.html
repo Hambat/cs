@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--Head-->
+  <head>
+    <!--Base Tags & Meta-->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <link rel="canonical" href=""/>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <!--end Base Tags & Meta-->
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="/libs/jquery-ui/jquery-ui.min.css"/>
+    <link rel="stylesheet" href="/css/_style.css"/>
+    <!--end Stylesheets-->
+  </head>
+  <!--end Head-->
+  <body>
+    <div id="layout"></div>
+    <!--Top-->
+    <div id="top">
+      <div class="b-container top__wrapper">
+        <div class="row align-items-center justify-content-between">
+          <div class="top__info col-xl d-flex justify-content-start flex-xl-nowrap flex-xl-row flex-lg-wrap flex-lg-column col-lg col-md-6 flex-md-wrap col-sm-8 flex-sm-wrap col-6">
+            <div class="top__info-city d-flex flex-row">
+              <div class="top__info-name">
+                <p>Ваш город:</p>
+              </div><a class="top__info-value" href="#">
+                <p>Москва</p></a>
+              <div class="top__info-symbol hidden-sm-down"><span>,</span></div>
+              <!--Modal-->
+              <div class="t-modal t-modal--cityconfirm">
+                <div class="t-modal__block">
+                  <div class="t-modal__close"></div>
+                  <div class="t-modal__title d-flex flex-row justify-content-start align-items-center">
+                    <div class="t-modal__title-grey">
+                      <p>Ваш город:</p>
+                    </div>
+                    <div class="t-modal__title-black">
+                      <p>Москва?</p>
+                    </div>
+                  </div>
+                  <div class="t-modal__separator"></div>
+                  <div class="t-modal__buttons d-flex flex-row justify-content-between align-items-start"><a class="t-modal__buttons-item t-modal__buttons-item--black t-modal__button-item--confirm" href="#">Да, все верно</a><a class="t-modal__buttons-item t-modal__buttons-item--white t-modal__button-item--another" href="#">Нет, выбрать другое</a></div>
+                </div>
+              </div>
+              <!--end Modal-->
+              <!--Modal-->
+              <div class="t-modal t-modal--citychoose">
+                <div class="t-modal__block">
+                  <div class="t-modal__close"></div>
+                  <div class="t-modal__title">
+                    <p>Выберите Ваше местоположение</p>
+                  </div>
+                  <div class="t-modal__separator"></div>
+                  <div class="t-modal__citylist">
+                    <div class="t-modal__citylist-top"><a class="t-modal__citylist-item" href="#">
+                        <p>Москва</p></a><a class="t-modal__citylist-item" href="#">
+                        <p>Беларусь</p></a><a class="t-modal__citylist-item" href="#">
+                        <p>Санкт-Петербург</p></a><a class="t-modal__citylist-item" href="#">
+                        <p>Казахстан</p></a></div>
+                    <div class="t-modal__citylist-other"><a class="t-modal__citylist-item" href="#">
+                        <p>Воронеж</p></a><a class="t-modal__citylist-item" href="#">
+                        <p>Пермь</p></a><a class="t-modal__citylist-item" href="#">
+                        <p>Екатеринбург</p></a><a class="t-modal__citylist-item" href="#">
+                        <p>Ростов-на-Дону</p></a><a class="t-modal__citylist-item" href="#">
+                        <p>Казань</p></a><a class="t-modal__citylist-item" href="#">
+                        <p>Самара</p></a><a class="t-modal__citylist-item" href="#">
+                        <p>Краснодар</p></a><a class="t-modal__citylist-item" href="#">
+                        <p>Тула</p></a><a class="t-modal__citylist-item" href="#">
+                        <p>Нижний Новгород</p></a><a class="t-modal__citylist-item" href="#">
+                        <p>Тюмень</p></a><a class="t-modal__citylist-item" href="#">
+                        <p>Новосибирск</p></a><a class="t-modal__citylist-item" href="#">
+                        <p>Ярославль</p></a></div>
+                  </div>
+                </div>
+                <form class="t-modal__cityfield" action="">
+                  <div class="t-modal__cityfield-title">
+                    <p>Если вашего местоположения нет в списке</p>
+                  </div>
+                  <div class="t-modal__cityfield-form d-flex flex-row justify-content-start align-items-center">
+                    <input class="t-modal__cityfield-form-input"/>
+                    <button class="t-modal__cityfield-form-button t-modal__buttons-item t-modal__buttons-item--black">Сохранить</button>
+                  </div>
+                </form>
+              </div>
+              <!--end Modal-->
+            </div>
+            <div class="top__info-points d-flex flex-row hidden-xs-down">
+              <div class="top__info-name">
+                <p>в вашем городе</p>
+              </div><a class="top__info-value" href="#">
+                <p>24 пункта выдачи заказов</p></a>
+            </div>
+          </div>
+          <div class="top__nav col-xl-7 d-flex flex-row justify-content-end align-items-center col-lg-8 col-md-4 col-sm-4 col-6">
+            <ul class="top__nav-menu d-flex flex-row justify-content-start hidden-md-down">
+              <li class="top__nav-menu-item"><a class="top__nav-menu-link" href="#">Доставка</a></li>
+              <li class="top__nav-menu-item"><a class="top__nav-menu-link" href="#">Оплата</a></li>
+              <li class="top__nav-menu-item"><a class="top__nav-menu-link" href="#">Помощь по магазину</a></li>
+              <li class="top__nav-menu-item"><a class="top__nav-menu-link" href="#">Блог</a></li>
+              <li class="top__nav-menu-item"><a class="top__nav-menu-link" href="#">О нас</a></li>
+            </ul><a class="top__nav-profile d-flex flex-row justify-content-start align-items-center" href="#">
+              <div class="top__nav-profile-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="19px">
+                  <image opacity="0.502" x="0px" y="0px" width="18px" height="19px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAATCAMAAACqTK3AAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACjlBMVEUAAAADAwMEAQQPEA8PDw8kHSMiGiAhHB4fGxsTEhMdGBshGh8kGyEgHB0ZFhggGh4fGRskICEiHR8gHR0hHh4hGx8iICAcFxobGBkiGyAjHSAdFhseGRwdGBwdGRojGyAjHR8ZFRceGRseGRoWEBYXERcVDxUbGhocGxsODQ0YFxYUDhIMCQsSDxEXFRYFBQUCAwMSEBEfHR0gFh0bFxkfGB0RDxACAgIGBQUDAgMiHB8eGBwjHSEgGx8eGxwjHh8YEBcaFRgiHh8kHiEfHBweHR0aFBgaFBkgGh8iHSEeGR0hHCAfGx4cFxkfHh0eHB0hHSEiHSIfGhwjHiMiHSMhHR8eGBsiHh8jHiAjHyAjHyAkHyEeGhwFAgUfGxwkISEjHSAiHR8hHR0iHh8jHyAUEhMkHSEiHh8bGRodGBwhGx8jHyAVExQdGRsiHyAjHiEZFhgjHyAgHB4fGhwjHiAjHyEjHh8iHiAiICAjHyAfGhwgHB0kHyAgGh4jHiEjHiAbFhkYFRckICEfGxwWEhUeHBwcGhojHR8gHB4jHiAfHR0ZGRkbFxokICEjHiAjHyAjHSAVExQiGx8iHyAhHB4hHR4iHx8iHR8hHB4gGx4jHSAeGBsgHh4hHB4jHyAiHh8iHh8iHR8jHiAiHh8fGh0TERIlISIjHyAiHR8fGh0jHiAjHyAjHyAiHh8hHR8fHB0iHh8lICIhHR4YFhchHh8iHx8hHR8iHB8iHh8kHiEeGRwgHh4jICAdFxsgHR4jHiAaFRcgHR4jICAcGhohHR4gHB4dGBocGRsgHh4iHh8jHh8lICAjHyAjHyAkHyAkHiAiHSIiHiEiHh8kICEgHR0jHyAjHyAjHyAdGBv///+VKcM9AAAA2XRSTlMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI5bXx3WBkDWIBVN0FvfSQ9gCkGXnYJA3VTEYAyDoAvcE0KfzgCdkZjagErgCEeVRAEKnxcASR4bHRWAhspEzJJQiAbKgoUXW49KS9TeDkbeXMsHVh4fm06GU2ATwpzaAwGDwwBLoA8RH4RR30NdU8MNSpqUR9fWoAtCgpoWmRwamsxIxb34wAAAAFiS0dE2XcKdzgAAAAHdElNRQfhDAwTLhMPM2XlAAABSUlEQVQY02NgAIGw8IjIqOgYRjCHgQkIYuPiExKTklNSmVmAgIEVCNLSM9jYOTKzsnM4gYCBi4srNy+fm4eXg6+gsIgfCBgEBASKS0oFBYWERUTKykWBgEFMTKyiskpcQlKKt7qmVhoIGGRkZGXq6hvk5BUUG5ualZSVlBhUVFXVWtJb2+TbOzq7utU11NUZGDS1tHV6eiv7+gsnTNTVk9U3YGAwNDKeNHnK1GnTZ8ycNdvEFCjCYDZnbmHhvPkLFi4qLFy8xNScgYFx6bLlK1auWl24Zu269Rs2brKwZNi8Zes2K2ub7Tt27rK1s9+9Z68Dw779Bxz5rW2snJxlbO1cXA8eOsxw5Kibu6yHJ1DIy9vHxPfYmuMMhSf8/AMCoYA/KOjkKYbC04LBMJHAkIDQM2cZzp2/gAwuXrrMcOXqtesIcO169g0AobuAPGrba9gAAAAASUVORK5CYII="></image>
+                </svg>
+              </div>
+              <div class="top__nav-profile-name">
+                <p>Личный Кабинет</p>
+              </div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end Top-->
+    <!--Header-->
+    <div id="header">
+      <div class="b-container">
+        <div class="header__wrapper row align-items-center justify-content-md-between justify-content-sm-between">
+          <div class="header__left col-xl d-flex flex-row align-items-center col-lg col-md-3 col-sm-5 col-4">
+            <div class="header__logo"><a class="header__logo-link" href="/"><img class="header__logo-imagesrc img-responsive" src="/images/header__logo.png" alt=""/></a></div>
+            <form class="header__search d-flex flex-row align-items-center justify-content-start hidden-md-down" action="/" method="POST">
+              <input class="header__search-field" placeholder="Поиск по 9456 товарам"/>
+              <div class="header__search-button">
+                <button class="header__search-button-item"></button>
+              </div>
+            </form>
+          </div>
+          <div class="header__right col-xl d-flex flex-row justify-content-end align-items-center col-lg col-md-8 col-sm-5 col-8">
+            <div class="header__time d-flex flex-row justify-content-start align-items-center hidden-sm-down">
+              <div class="header__time-icon h-icon h-icon--grey d-flex flex-row justify-content-center align-items-center">
+                <div class="header__time-icon-item h-icon__item h-icon__item--phone"></div>
+              </div>
+              <div class="header__time-info">
+                <div class="header__time-info-value">
+                  <p>12-20 будни, 12-19 выходные</p>
+                </div><a class="header__time-info-number" href="tel:+78007777777">8 (800) 777-77-77</a>
+              </div>
+            </div>
+            <div class="header__cart d-flex flex-row justify-content-start align-items-center">
+              <div class="header__cart-icon h-icon h-icon--yellow d-flex flex-row justify-content-center align-items-center">
+                <div class="header__cart-icon-item h-icon__item h-icon__item--cart"></div>
+              </div>
+              <div class="header__cart-info">
+                <div class="header__cart-info-items">
+                  <p><span class="header__cart-info-value">4</span> товара</p>
+                </div>
+                <div class="header__cart-info-sum">
+                  <p><span class="header__cart-info-sum-value">210 877</span> <span class="header__cart-info-sum-currency">руб.</span></p>
+                </div>
+              </div>
+              <div class="header__mobile-burger hidden-md-up">
+                <div class="header__mobile-burger-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 384 384">
+                    <g>
+                      <rect x="0" y="277.333" width="384" height="42.667"></rect>
+                      <rect x="0" y="170.667" width="384" height="42.667"></rect>
+                      <rect x="0" y="64" width="384" height="42.667"></rect>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              <div class="t-modal t-modal--addtocart">
+                <div class="t-modal__block">
+                  <div class="t-modal__cart">
+                    <div class="t-modal__cart-product d-flex flex-row justify-content-start align-items-center">
+                      <div class="t-modal__cart-product-count d-flex flex-column justify-content-center align-items-center">
+                        <div class="t-modal__cart-product-count-icon t-modal__cart-product-count-icon--minus"></div>
+                        <div class="t-modal__cart-product-count-value"> <span class="value">1</span><span>шт</span></div>
+                        <div class="t-modal__cart-product-count-icon t-modal__cart-product-count-icon--plus"></div>
+                      </div>
+                      <div class="t-modal__cart-product-info d-flex flex-row justify-content-start align-items-center">
+                        <div class="t-modal__cart-product-info-image"><img class="t-modal__cart-product-info-imagesrc" src="" alt=""/></div>
+                        <div class="t-modal__cart-product-info-details">
+                          <div class="t-modal__cart-product-info-price"> <span class="number">490 </span><span>руб.</span></div>
+                          <div class="t-modal__cart-product-info-name">
+                            <p>Мстители. Тор Часть трехсотая. ТОМ второй</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="t-modal__cart-result d-flex flex-row justify-content-start align-items-center">
+                      <div class="t-modal__cart-result-left">
+                        <div class="t-modal__cart-result-text t-modal__cart-result-text--black">
+                          <p>Итого</p>
+                        </div>
+                        <div class="t-modal__cart-result-text t-modal__cart-result-text--grey">
+                          <p>Без учета доставки</p>
+                        </div>
+                      </div>
+                      <div class="t-modal__cart-result-right">
+                        <div class="t-modal__cart-product-info-price"> <span class="number">490 </span><span>руб.</span></div>
+                      </div>
+                    </div>
+                    <div class="t-modal__cart-buttons d-flex flex-row justify-content-between align-items-center"><a class="t-modal__cart-buttons-item t-modal__buttons-item t-modal__buttons-item--clearcart" href="#">Очистить корзину</a><a class="t-modal__cart-buttons-item t-modal__cart-buttons-item--black t-modal__buttons-item t-modal__buttons-item--black t-modal__buttons-item--order" href="#">Перейти к оформлению заказа</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form class="header__search d-flex flex-row align-items-center justify-content-start hidden-lg-up col-md-12 justify-content-md-center" action="/" method="POST">
+            <input class="header__search-field" placeholder="Поиск по 9456 товарам"/>
+            <div class="header__search-button">
+              <button class="header__search-button-item"></button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="header__mobile-menu">
+        <ul class="header__mobile-menu-list">
+          <li class="header__mobile-menu-item"><a class="header__mobile-menu-link" href="#">Комиксы</a></li>
+          <li class="header__mobile-menu-item"><a class="header__mobile-menu-link" href="#">Фигурки</a></li>
+          <li class="header__mobile-menu-item"><a class="header__mobile-menu-link" href="#">Одежда</a></li>
+          <li class="header__mobile-menu-item"><a class="header__mobile-menu-link" href="#">Разное</a></li>
+          <li class="header__mobile-menu-item"><a class="header__mobile-menu-link" href="#">Издательства</a></li>
+          <li class="header__mobile-menu-item"><a class="header__mobile-menu-link" href="#">Скидки</a></li>
+        </ul>
+        <ul class="header__mobile-menu-list">
+          <li class="header__mobile-menu-item"><a class="header__mobile-menu-link header__mobile-menu-link--white" href="#">Доставка</a></li>
+          <li class="header__mobile-menu-item"><a class="header__mobile-menu-link header__mobile-menu-link--white" href="#">Оплата</a></li>
+          <li class="header__mobile-menu-item"><a class="header__mobile-menu-link header__mobile-menu-link--white" href="#">Помощь по магазину</a></li>
+          <li class="header__mobile-menu-item"><a class="header__mobile-menu-link header__mobile-menu-link--white" href="#">Блог</a></li>
+          <li class="header__mobile-menu-item"><a class="header__mobile-menu-link header__mobile-menu-link--white" href="#">О нас</a></li>
+        </ul>
+      </div>
+    </div>
+    <!--end Header-->
+    <!--Nav-->
+    <div id="nav">
+      <div class="b-container">
+        <div class="main-slider__nav hidden-sm-down">
+          <div class="row d-flex flex-row justify-content-between align-items-center">
+            <ul class="main-slider__nav-menu d-flex flex-row justify-content-start col-lg col-md">
+              <li class="main-slider__nav-item"><a class="main-slider__nav-link" href="#">Комиксы</a>
+                <div class="main-slider__nav-submenu d-flex flex-row justify-content-start align-items-start flex-md-wrap">
+                  <!--Submenu Col-->
+                  <div class="m-submenu__col main-slider__nav-submenu-col">
+                    <div class="m-submenu__cat" href="#">
+                      <div class="m-submenu__cat-image"><a class="m-submenu__cat-link" href="#"><img class="m-submenu__cat-imagesrc" src="/images/submenu__item-batman.jpg" alt=""/></a></div><a class="m-submenu__cat-name" href="#">Комиксы на русском</a>
+                    </div>
+                    <!--Submenu List-->
+                    <ul class="m-submenu__list">
+                      <!--Submenu List Item-->
+                      <li class="m-submenu__list-item"><a class="m-submenu__list-link" href="#">
+                          <div class="m-submenu__list-name">Комиксы Marvel</div></a>
+                        <div class="m-submenu__list-count">45</div>
+                      </li>
+                      <!--end Submenu List Item-->
+                      <!--Submenu List Item-->
+                      <li class="m-submenu__list-item"><a class="m-submenu__list-link" href="#">
+                          <div class="m-submenu__list-name">Комиксы DC</div></a>
+                        <div class="m-submenu__list-count">23</div>
+                      </li>
+                      <!--end Submenu List Item-->
+                      <!--Submenu List Item-->
+                      <li class="m-submenu__list-item"><a class="m-submenu__list-link" href="#">
+                          <div class="m-submenu__list-name">Комиксы Vertigo</div></a>
+                        <div class="m-submenu__list-count">0</div>
+                      </li>
+                      <!--end Submenu List Item-->
+                      <!--Submenu List Item-->
+                      <li class="m-submenu__list-item"><a class="m-submenu__list-link" href="#">
+                          <div class="m-submenu__list-name">Комиксы Vallant</div></a>
+                        <div class="m-submenu__list-count">56</div>
+                      </li>
+                      <!--end Submenu List Item-->
+                      <!--Submenu List Item-->
+                      <li class="m-submenu__list-item"><a class="m-submenu__list-link" href="#">
+                          <div class="m-submenu__list-name">Комиксы Image</div></a>
+                        <div class="m-submenu__list-count">118</div>
+                      </li>
+                      <!--end Submenu List Item-->
+                      <!--Submenu List Item-->
+                      <li class="m-submenu__list-item"><a class="m-submenu__list-link" href="#">
+                          <div class="m-submenu__list-name">Комиксы Dark Horse</div></a>
+                        <div class="m-submenu__list-count">2</div>
+                      </li>
+                      <!--end Submenu List Item-->
+                      <!--Submenu List Item-->
+                      <li class="m-submenu__list-item"><a class="m-submenu__list-link" href="#">
+                          <div class="m-submenu__list-name">Комиксы Oni Press</div></a>
+                        <div class="m-submenu__list-count">96</div>
+                      </li>
+                      <!--end Submenu List Item-->
+                      <!--Submenu List Item-->
+                      <li class="m-submenu__list-item"><a class="m-submenu__list-link" href="#">
+                          <div class="m-submenu__list-name">Комиксы Mirage Studios</div></a>
+                        <div class="m-submenu__list-count">3</div>
+                      </li>
+                      <!--end Submenu List Item-->
+                      <!--Submenu List Item-->
+                      <li class="m-submenu__list-item"><a class="m-submenu__list-link" href="#">
+                          <div class="m-submenu__list-name">Комиксы BOOM! Studios</div></a>
+                        <div class="m-submenu__list-count">5</div>
+                      </li>
+                      <!--end Submenu List Item-->
+                      <!--Submenu List Item-->
+                      <li class="m-submenu__list-item"><a class="m-submenu__list-link" href="#">
+                          <div class="m-submenu__list-name">Комиксы IDW</div></a>
+                        <div class="m-submenu__list-count">0</div>
+                      </li>
+                      <!--end Submenu List Item-->
+                      <!--Submenu List Item-->
+                      <li class="m-submenu__list-item"><a class="m-submenu__list-link" href="#">
+                          <div class="m-submenu__list-name">Редкие комиксы</div></a>
+                        <div class="m-submenu__list-count">12</div>
+                      </li>
+                      <!--end Submenu List Item-->
+                      <!--Submenu List Item-->
+                      <li class="m-submenu__list-item"><a class="m-submenu__list-link" href="#">
+                          <div class="m-submenu__list-name">Российские комиксы</div></a>
+                        <div class="m-submenu__list-count">7</div>
+                      </li>
+                      <!--end Submenu List Item-->
+                      <!--Submenu List Item-->
+                      <li class="m-submenu__list-item"><a class="m-submenu__list-link" href="#">
+                          <div class="m-submenu__list-name">Комиксы других издательств</div></a>
+                        <div class="m-submenu__list-count">44</div>
+                      </li>
+                      <!--end Submenu List Item-->
+                    </ul>
+                    <!--end Submenu List-->
+                  </div>
+                  <!--end Submenu Col-->
+                  <!--Submenu Col-->
+                  <div class="m-submenu__col">
+                    <!--Submenu Cat-->
+                    <div class="m-submenu__cat" href="#">
+                      <div class="m-submenu__cat-image"><a class="m-submenu__cat-link" href="#"><img class="m-submenu__cat-imagesrc" src="/images/submenu__item-wolverine.jpg" alt=""/></a></div><a class="m-submenu__cat-name" href="#">Комиксы на английском</a>
+                    </div>
+                    <!--end Submenu Cat-->
+                    <!--Submenu Cat-->
+                    <div class="m-submenu__cat" href="#">
+                      <div class="m-submenu__cat-image"><a class="m-submenu__cat-link" href="#"><img class="m-submenu__cat-imagesrc" src="/images/submenu__item-martin.jpg" alt=""/></a></div><a class="m-submenu__cat-name" href="#">Графические романы</a>
+                    </div>
+                    <!--end Submenu Cat-->
+                    <!--Submenu Cat-->
+                    <div class="m-submenu__cat" href="#">
+                      <div class="m-submenu__cat-image"><a class="m-submenu__cat-link" href="#"><img class="m-submenu__cat-imagesrc" src="/images/submenu__item-manga.jpg" alt=""/></a></div><a class="m-submenu__cat-name" href="#">Манга</a>
+                    </div>
+                    <!--end Submenu Cat-->
+                    <!--Submenu Cat-->
+                    <div class="m-submenu__cat" href="#">
+                      <div class="m-submenu__cat-image"><a class="m-submenu__cat-link" href="#"><img class="m-submenu__cat-imagesrc" src="/images/submenu__item-periodika.jpg" alt=""/></a></div><a class="m-submenu__cat-name" href="#">Периодика</a>
+                    </div>
+                    <!--end Submenu Cat-->
+                  </div>
+                  <!--end Submenu Col-->
+                  <!--Submenu Col-->
+                  <div class="m-submenu__col main-slider__nav-submenu-col">
+                    <div class="m-submenu__cat" href="#">
+                      <div class="m-submenu__cat-image"><a class="m-submenu__cat-link" href="#"><img class="m-submenu__cat-imagesrc" src="/images/submenu__item-potter.jpg" alt=""/></a></div><a class="m-submenu__cat-name" href="#">Книги</a>
+                    </div>
+                    <!--Submenu List-->
+                    <ul class="m-submenu__list">
+                      <!--Submenu List Item-->
+                      <li class="m-submenu__list-item"><a class="m-submenu__list-link" href="#">
+                          <div class="m-submenu__list-name">Гарри Поттер</div></a>
+                        <div class="m-submenu__list-count">45</div>
+                      </li>
+                      <!--end Submenu List Item-->
+                      <!--Submenu List Item-->
+                      <li class="m-submenu__list-item"><a class="m-submenu__list-link" href="#">
+                          <div class="m-submenu__list-name">Доктор Кто</div></a>
+                        <div class="m-submenu__list-count">23</div>
+                      </li>
+                      <!--end Submenu List Item-->
+                      <!--Submenu List Item-->
+                      <li class="m-submenu__list-item"><a class="m-submenu__list-link" href="#">
+                          <div class="m-submenu__list-name">Книги для творчества</div></a>
+                        <div class="m-submenu__list-count">0</div>
+                      </li>
+                      <!--end Submenu List Item-->
+                      <!--Submenu List Item-->
+                      <li class="m-submenu__list-item"><a class="m-submenu__list-link" href="#">
+                          <div class="m-submenu__list-name">Assassin's Creed</div></a>
+                        <div class="m-submenu__list-count">56</div>
+                      </li>
+                      <!--end Submenu List Item-->
+                      <!--Submenu List Item-->
+                      <li class="m-submenu__list-item"><a class="m-submenu__list-link" href="#">
+                          <div class="m-submenu__list-name">Книги Marvel</div></a>
+                        <div class="m-submenu__list-count">118</div>
+                      </li>
+                      <!--end Submenu List Item-->
+                      <!--Submenu List Item-->
+                      <li class="m-submenu__list-item"><a class="m-submenu__list-link" href="#">
+                          <div class="m-submenu__list-name">Ходячие мертвецы</div></a>
+                        <div class="m-submenu__list-count">2</div>
+                      </li>
+                      <!--end Submenu List Item-->
+                      <!--Submenu List Item-->
+                      <li class="m-submenu__list-item"><a class="m-submenu__list-link" href="#">
+                          <div class="m-submenu__list-name">World of Warcraft</div></a>
+                        <div class="m-submenu__list-count">96</div>
+                      </li>
+                      <!--end Submenu List Item-->
+                      <!--Submenu List Item-->
+                      <li class="m-submenu__list-item"><a class="m-submenu__list-link" href="#">
+                          <div class="m-submenu__list-name">Warhammer</div></a>
+                        <div class="m-submenu__list-count">3</div>
+                      </li>
+                      <!--end Submenu List Item-->
+                      <!--Submenu List Item-->
+                      <li class="m-submenu__list-item"><a class="m-submenu__list-link" href="#">
+                          <div class="m-submenu__list-name">Ранобэ</div></a>
+                        <div class="m-submenu__list-count">5</div>
+                      </li>
+                      <!--end Submenu List Item-->
+                      <!--Submenu List Item-->
+                      <li class="m-submenu__list-item"><a class="m-submenu__list-link" href="#">
+                          <div class="m-submenu__list-name">Звездные войны</div></a>
+                        <div class="m-submenu__list-count">0</div>
+                      </li>
+                      <!--end Submenu List Item-->
+                      <!--Submenu List Item-->
+                      <li class="m-submenu__list-item"><a class="m-submenu__list-link" href="#">
+                          <div class="m-submenu__list-name">Книги DC</div></a>
+                        <div class="m-submenu__list-count">12</div>
+                      </li>
+                      <!--end Submenu List Item-->
+                    </ul>
+                    <!--end Submenu List-->
+                  </div>
+                  <!--end Submenu Col-->
+                  <!--Submenu Col-->
+                  <div class="m-submenu__col m-submenu__col--inrow">
+                    <!--Submenu Cat-->
+                    <div class="m-submenu__cat" href="#">
+                      <div class="m-submenu__cat-image"><a class="m-submenu__cat-link" href="#"><img class="m-submenu__cat-imagesrc" src="/images/submenu__item-wolverine.jpg" alt=""/></a></div><a class="m-submenu__cat-name" href="#">Артбуки / Энциклопедии</a>
+                    </div>
+                    <!--end Submenu Cat-->
+                    <!--Submenu Cat-->
+                    <div class="m-submenu__cat" href="#">
+                      <div class="m-submenu__cat-image"><a class="m-submenu__cat-link" href="#"><img class="m-submenu__cat-imagesrc" src="/images/submenu__item-martin.jpg" alt=""/></a></div><a class="m-submenu__cat-name" href="#">Для детей</a>
+                    </div>
+                    <!--end Submenu Cat-->
+                    <!--Submenu Cat-->
+                    <div class="m-submenu__cat" href="#">
+                      <div class="m-submenu__cat-image"><a class="m-submenu__cat-link" href="#"><img class="m-submenu__cat-imagesrc" src="/images/submenu__item-manga.jpg" alt=""/></a></div><a class="m-submenu__cat-name" href="#">С чего начать</a>
+                    </div>
+                    <!--end Submenu Cat-->
+                    <!--Submenu Cat-->
+                    <div class="m-submenu__cat" href="#">
+                      <div class="m-submenu__cat-image"><a class="m-submenu__cat-link" href="#"><img class="m-submenu__cat-imagesrc" src="/images/submenu__item-periodika.jpg" alt=""/></a></div><a class="m-submenu__cat-name" href="#">Комикс-боксы</a>
+                    </div>
+                    <!--end Submenu Cat-->
+                  </div>
+                  <!--end Submenu Col-->
+                </div>
+              </li>
+              <li class="main-slider__nav-item"><a class="main-slider__nav-link" href="#">Фигурки</a></li>
+              <li class="main-slider__nav-item"><a class="main-slider__nav-link" href="#">Одежда</a></li>
+              <li class="main-slider__nav-item"><a class="main-slider__nav-link" href="#">Разное</a></li>
+            </ul>
+            <ul class="main-slider__nav-buttons d-flex flex-row justify-content-end col-lg col-md">
+              <li class="main-slider__nav-item"><a class="main-slider__nav-link main-slider__nav-link--button main-slider__nav-link--green" href="#">Издательства</a></li>
+              <li class="main-slider__nav-item"><a class="main-slider__nav-link main-slider__nav-link--button main-slider__nav-link--red" href="#">Скидки</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end Nav-->
+    <!--Panel-->
+    <div id="lk-panel">
+      <div class="b-container">
+        <div class="lk-panel__block d-flex flex-lg-row flex-xl-row justify-content-xl-between justify-content-lg-between flex-md-wrap flex-sm-wrap flex-wrap">
+          <!--Panel Block Item-->
+          <div class="lk-panel__block-item"><a class="lk-panel__block-item-icon lk-panel__block-item-icon--percent" href="#"></a>
+            <div class="lk-panel__block-item-info">
+              <div class="lk-panel__block-item-title">
+                <p>Моя скидка</p>
+              </div>
+              <div class="lk-panel__block-item-value">
+                <p>10%</p>
+              </div>
+            </div>
+          </div>
+          <!--end Panel Block Item-->
+          <!--Panel Block Item-->
+          <div class="lk-panel__block-item"><a class="lk-panel__block-item-icon lk-panel__block-item-icon--point" href="#"></a>
+            <div class="lk-panel__block-item-info">
+              <div class="lk-panel__block-item-title">
+                <p>Мои баллы</p>
+              </div>
+              <div class="lk-panel__block-item-value">
+                <p>102</p>
+              </div>
+            </div>
+          </div>
+          <!--end Panel Block Item-->
+          <!--Panel Block Item-->
+          <div class="lk-panel__block-item"><a class="lk-panel__block-item-icon lk-panel__block-item-icon--goods" href="#"></a>
+            <div class="lk-panel__block-item-info">
+              <div class="lk-panel__block-item-title">
+                <p>Товаров куплено</p>
+              </div>
+              <div class="lk-panel__block-item-value">
+                <p>23 / 245 000 <span class="lk-panel__block-item-currency">руб</span></p>
+              </div>
+            </div>
+          </div>
+          <!--end Panel Block Item-->
+          <!--Panel Block Item-->
+          <div class="lk-panel__block-item"><a class="lk-panel__block-item-icon lk-panel__block-item-icon--review" href="#"></a>
+            <div class="lk-panel__block-item-info">
+              <div class="lk-panel__block-item-title">
+                <p>Мои рецензии</p>
+              </div>
+              <div class="lk-panel__block-item-value">
+                <p>15</p>
+              </div>
+            </div>
+          </div>
+          <!--end Panel Block Item-->
+          <!--Panel Block Item-->
+          <div class="lk-panel__block-item"><a class="lk-panel__block-item-icon lk-panel__block-item-icon--recall" href="#"></a>
+            <div class="lk-panel__block-item-info">
+              <div class="lk-panel__block-item-title">
+                <p>Мои отзывы</p>
+              </div>
+              <div class="lk-panel__block-item-value">
+                <p>236</p>
+              </div>
+            </div>
+          </div>
+          <!--end Panel Block Item-->
+          <!--Panel Block Item-->
+          <div class="lk-panel__block-item"><a class="lk-panel__block-item-icon lk-panel__block-item-icon--message" href="#"></a>
+            <div class="lk-panel__block-item-info">
+              <div class="lk-panel__block-item-title">
+                <p>Сообщения</p>
+              </div>
+              <div class="lk-panel__block-item-value">
+                <p>3 / <span class="lk-panel__block-item-totalmes">15</span></p>
+              </div>
+            </div>
+          </div>
+          <!--end Panel Block Item-->
+        </div>
+      </div>
+    </div>
+    <!--end Panel-->
+    <!--Main-->
+    <div id="lk-main">
+      <div class="b-container">
+        <div class="lk-main__wrapper d-flex flex-xl-row flex-lg-row justify-content-xl-between justify-content-lg-between justify-content-md-between flex-sm-wrap flex-wrap">
+          <div class="lk-main__sidebar">
+            <div class="lk-main__sidebar-name">
+              <p>Кржижеполь Константинопольский</p>
+            </div>
+            <div class="lk-main__sidebar-exit"><a class="lk-main__sidebar-exit-link" href="#">Выйти</a></div>
+            <ul class="lk-main__sidebar-list">
+              <li class="lk-main__sidebar-list-item"><a class="lk-main__sidebar-list-link" href="#">Мои заказы</a></li>
+              <li class="lk-main__sidebar-list-item"><a class="lk-main__sidebar-list-link" href="#">Уже купил</a></li>
+              <li class="lk-main__sidebar-list-item"><a class="lk-main__sidebar-list-link" href="#">Хочу купить</a></li>
+              <li class="lk-main__sidebar-list-item"><a class="lk-main__sidebar-list-link" href="#">Мои комментарии</a></li>
+              <li class="lk-main__sidebar-list-item"><a class="lk-main__sidebar-list-link" href="#">Мои рецензии</a></li>
+              <li class="lk-main__sidebar-list-item"><a class="lk-main__sidebar-list-link" href="#">Мои подписки</a></li>
+            </ul>
+            <ul class="lk-main__sidebar-list">
+              <li class="lk-main__sidebar-list-item"><a class="lk-main__sidebar-list-link" href="#">Настройки аккаунта</a></li>
+            </ul>
+          </div>
+          <div class="lk-main__block">
+            <div class="lk-main__orders">
+              <div class="lk-main__title">
+                <p>Мои заказы</p>
+              </div>
+              <div class="lk-main__orders-order">
+                <div class="lk-main__name">
+                  <p>Заказ:</p>
+                </div>
+                <div class="lk-main__value lk-main__orders-order-value">
+                  <p><span class="value">1197456832</span> от 17.08.2017 18:36</p>
+                </div>
+              </div>
+              <div class="lk-main__orders-info">
+                <div class="lk-main__orders-info-item">
+                  <div class="lk-main__name">
+                    <p>Статус:</p>
+                  </div>
+                  <div class="lk-main__value">
+                    <p>Завершен</p>
+                  </div>
+                </div>
+                <div class="lk-main__orders-info-item">
+                  <div class="lk-main__name">
+                    <p>Способ получения:</p>
+                  </div>
+                  <div class="lk-main__value">
+                    <p>Трансконтинентал инкорпорейтед</p>
+                  </div>
+                </div>
+                <div class="lk-main__orders-info-item">
+                  <div class="lk-main__name">
+                    <p>Способ оплаты:</p>
+                  </div>
+                  <div class="lk-main__value">
+                    <p>Наличные курьеру</p>
+                  </div>
+                </div>
+              </div>
+              <div class="lk-main__orders-block">
+                <!--Orders Item-->
+                <div class="lk-main__orders-block-item">
+                  <div class="lk-main__orders-block-item-image"><img class="lk-main__orders-block-item-imagesrc" src="/images/slider__new-example.jpg" alt=""/></div>
+                  <div class="lk-main__orders-block-item-info"><a class="lk-main__orders-block-item-info-title" href="#">Сайдсвайп против тандерхуфа</a>
+                    <div class="lk-main__orders-block-item-info-description">
+                      <p>Поиски сбежавших после крушения тюремного корабля "Алкемор" преступников-десептиконов продолжаются. Внимание! В районе гавани Краун-Сити отмечена подозрительная активность. Похоже, героям из команды Бамблби предстоит нелегкое испытание. Кто на этот раз? Тандерхуф! Самый известный криминальный босс на Кибертроне! Что ж, Сайдсвайп, действуй!</p>
+                    </div>
+                    <div class="lk-main__orders-block-item-info-price">
+                      <p>1 456 руб.</p>
+                    </div>
+                    <div class="lk-main__orders-block-item-info-buttons">
+                      <div class="lk-main__orders-block-item-info-buttons-left"><a class="lk-main__orders-block-item-info-buttons-item lk-main__orders-block-item-info-buttons-item--order" href="#">
+                          <div class="lk-main__orders-block-item-info-buttons-item-icon"></div>
+                          <div class="lk-main__orders-block-item-info-buttons-item-name">
+                            <p>Купить еще раз</p>
+                          </div></a></div>
+                      <div class="lk-main__orders-block-item-info-buttons-right"><a class="lk-main__orders-block-item-info-buttons-item lk-main__orders-block-item-info-buttons-item--grey" href="#">Оставить отзыв</a><a class="lk-main__orders-block-item-info-buttons-item lk-main__orders-block-item-info-buttons-item--grey" href="#">Оставить рецензию</a></div>
+                    </div>
+                  </div>
+                </div>
+                <!--end Orders Item-->
+                <!--Orders Item-->
+                <div class="lk-main__orders-block-item">
+                  <div class="lk-main__orders-block-item-image"><img class="lk-main__orders-block-item-imagesrc" src="/images/slider__new-example.jpg" alt=""/></div>
+                  <div class="lk-main__orders-block-item-info"><a class="lk-main__orders-block-item-info-title" href="#">Сайдсвайп против тандерхуфа</a>
+                    <div class="lk-main__orders-block-item-info-description">
+                      <p>Поиски сбежавших после крушения тюремного корабля "Алкемор" преступников-десептиконов продолжаются. Внимание! В районе гавани Краун-Сити отмечена подозрительная активность. Похоже, героям из команды Бамблби предстоит нелегкое испытание. Кто на этот раз? Тандерхуф! Самый известный криминальный босс на Кибертроне! Что ж, Сайдсвайп, действуй!</p>
+                    </div>
+                    <div class="lk-main__orders-block-item-info-price">
+                      <p>1 456 руб.</p>
+                    </div>
+                    <div class="lk-main__orders-block-item-info-buttons">
+                      <div class="lk-main__orders-block-item-info-buttons-left"><a class="lk-main__orders-block-item-info-buttons-item lk-main__orders-block-item-info-buttons-item--order" href="#">
+                          <div class="lk-main__orders-block-item-info-buttons-item-icon"></div>
+                          <div class="lk-main__orders-block-item-info-buttons-item-name">
+                            <p>Купить еще раз</p>
+                          </div></a></div>
+                      <div class="lk-main__orders-block-item-info-buttons-right"><a class="lk-main__orders-block-item-info-buttons-item lk-main__orders-block-item-info-buttons-item--grey" href="#">Оставить отзыв</a><a class="lk-main__orders-block-item-info-buttons-item lk-main__orders-block-item-info-buttons-item--grey" href="#">Оставить рецензию</a></div>
+                    </div>
+                  </div>
+                </div>
+                <!--end Orders Item-->
+              </div>
+              <div class="lk-main__orders-more"><a class="lk-main__orders-more-item" href="#">Загрузить еще</a></div>
+              <div class="lk-main__pagination d-flex justify-content-between">
+                <div class="lk-main__pagination-dir"><a class="lk-main__pagination-dir-item" href="#">Назад</a></div>
+                <div class="lk-main__pagination-block"><a class="lk-main__pagination-block-item" href="#">1</a><a class="lk-main__pagination-block-item" href="#">..</a><a class="lk-main__pagination-block-item" href="#">22</a><a class="lk-main__pagination-block-item" href="#">23</a><a class="lk-main__pagination-block-item" href="#">24</a></div>
+                <div class="lk-main__pagination-dir"><a class="lk-main__pagination-dir-item" href="#">Вперед</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end Main-->
+    <!--Footer-->
+    <div id="footer">
+      <div class="footer__advantages">
+        <div class="b-container footer__wrapper">
+          <div class="footer__advantages-block d-flex flex-row justify-content-between align-items-start justify-content-md-center flex-md-wrap flex-sm-wrap justify-content-sm-center flex-wrap">
+            <!--Advantages Item-->
+            <div class="footer__advantages-item d-flex flex-row justify-content-center align-items-start flex-wrap col-lg-2 col-md-4 col-sm-4 col-12">
+              <div class="footer__advantages-item-icon footer__advantages-item-icon--user"></div>
+              <div class="footer__advantages-item-name">
+                <p>Привет! Добро пожаловать в «Comic Street». Вы любите комиксы и всё что с ними связано? Вы следите за</p>
+              </div>
+            </div>
+            <!--end Advantages Item-->
+            <!--Advantages Item-->
+            <div class="footer__advantages-item d-flex flex-row justify-content-center align-items-start flex-wrap col-lg-2 col-md-4 col-sm-4 col-12">
+              <div class="footer__advantages-item-icon footer__advantages-item-icon--calendar"></div>
+              <div class="footer__advantages-item-name">
+                <p>Привет! Добро пожаловать в «Comic Street». Вы любите комиксы и всё что с ними связано? Вы следите за</p>
+              </div>
+            </div>
+            <!--end Advantages Item-->
+            <!--Advantages Item-->
+            <div class="footer__advantages-item d-flex flex-row justify-content-center align-items-start flex-wrap col-lg-2 col-md-4 col-sm-4 col-12">
+              <div class="footer__advantages-item-icon footer__advantages-item-icon--phone"></div>
+              <div class="footer__advantages-item-name">
+                <p>Привет! Добро пожаловать в «Comic Street». Вы любите комиксы и всё что с ними связано? Вы следите за</p>
+              </div>
+            </div>
+            <!--end Advantages Item-->
+            <!--Advantages Item-->
+            <div class="footer__advantages-item d-flex flex-row justify-content-center align-items-start flex-wrap col-lg-2 col-md-4 col-sm-4 col-12">
+              <div class="footer__advantages-item-icon footer__advantages-item-icon--clock"></div>
+              <div class="footer__advantages-item-name">
+                <p>Привет! Добро пожаловать в «Comic Street». Вы любите комиксы и всё что с ними связано? Вы следите за</p>
+              </div>
+            </div>
+            <!--end Advantages Item-->
+            <!--Advantages Item-->
+            <div class="footer__advantages-item d-flex flex-row justify-content-center align-items-start flex-wrap col-lg-2 col-md-4 col-sm-4 col-12">
+              <div class="footer__advantages-item-icon footer__advantages-item-icon--marker"></div>
+              <div class="footer__advantages-item-name">
+                <p>Привет! Добро пожаловать в «Comic Street». Вы любите комиксы и всё что с ними связано? Вы следите за</p>
+              </div>
+            </div>
+            <!--end Advantages Item-->
+          </div>
+        </div>
+      </div>
+      <div class="footer__info">
+        <div class="b-container">
+          <div class="footer__row d-flex flex-row justify-content-between align-items-start flex-lg-wrap flex-md-wrap flex-sm-wrap flex-wrap">
+            <div class="footer__info-about footer__row-block col-xl col-lg-6 col-md-12 col-sm-12 col-12">
+              <div class="footer__title">
+                <p>О магазине</p>
+              </div>
+              <div class="footer__text">
+                <p>Wowmall is one of the best specialized online stores for selling of sportswear, footwear, accessories, sports equipment and other goods for sport and recreation. You can find sports products from the world’s best manufacturers on it. It’s possible to deliver them on the whole territory of world. All brands presented in our</p>
+              </div>
+            </div>
+            <div class="footer__info-contacts footer__row-block col-xl col-lg-6 col-md-12 col-sm-12 col-12">
+              <div class="footer__title">
+                <p>Контакты</p>
+              </div>
+              <div class="footer__text">
+                <p>Адрес центрального магазина: г.Москва</p>
+                <p>Телефон: +777 2345 7885: +777 2345 7886</p>
+                <p>Часы работы: 7 дней в неделю с 10 до 22.</p>
+                <p>E-mail: info@mydomain.com</p>
+              </div>
+            </div>
+            <div class="footer__info-letter footer__row-block col-xl col-lg-6 col-md-12 col-sm-12 col-12 col-xl-5">
+              <div class="footer__title">
+                <p>Подпишитесь на наши новости</p>
+              </div>
+              <div class="footer__text">
+                <p>Для наших подписчиков действует скидка 15% на первый заказ</p>
+              </div>
+              <form class="footer__info-letter-form d-flex flex-row justify-content-start align-items-center flex-wrap" action="/">
+                <input class="footer__info-letter-form-input" type="text" placeholder="Ваш e-mail"/>
+                <button class="footer__info-letter-form-button">Подписаться</button>
+              </form>
+            </div>
+          </div>
+          <div class="footer__row">
+            <div class="footer__social d-flex flex-row justify-content-lg-end align-items-center justify-content-sm-center jsutify-content-center"><a class="footer__social-item footer__social-item--tw" href="#"></a><a class="footer__social-item footer__social-item--vk" href="#"></a><a class="footer__social-item footer__social-item--fb" href="#"></a><a class="footer__social-item footer__social-item--ok" href="#"></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <div class="b-container">
+          <div class="footer__copyright-block d-flex flex-row justify-content-lg-between align-items-center justify-content-center">
+            <div class="footer__copyright-logo"><a class="footer__copyright-link" href="/"><img class="footer__copyright-image" src="/images/footer__logo.png" alt=""/></a></div>
+            <div class="footer__copyright-text">
+              <p>Все права защищены. Comicstreet 2017</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end Footer-->
+    <!--Modal-->
+    <div id="modal">
+      <div class="modal__layout"></div>
+      <div class="modal__form modal__form--shops">
+        <div class="modal__form-title modal__form-title--tiny">
+          <p>Наши магазины</p>
+        </div>
+        <div class="modal__form-shops d-flex flex-row justify-content-between align-items-start">
+          <div class="modal__form-shops-map"><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab0ce943af0f2aadb456ad1721a5e3b027b7c22c4cc13509325f8fee679021d09&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe></div>
+          <ul class="modal__form-shops-list">
+            <li class="modal__form-shops-item">
+              <div class="modal__form-shops-title">
+                <p>Магазин в ТЦ "Уникальный"</p>
+              </div>
+              <div class="modal__form-shops-info">
+                <div class="modal__form-shops-info-row">
+                  <div class="modal__form-shops-info-row-name">
+                    <p>Адрес:</p>
+                  </div>
+                  <div class="modal__form-shops-info-row-value">
+                    <p>Москва, ул. Пушечная 3</p>
+                  </div>
+                </div>
+                <div class="modal__form-shops-info-row">
+                  <div class="modal__form-shops-info-row-name">
+                    <p>График работы:</p>
+                  </div>
+                  <div class="modal__form-shops-info-row-value">
+                    <p>Ежедневно с 11:00 до 21:00</p>
+                  </div>
+                </div>
+                <div class="modal__form-shops-info-row">
+                  <div class="modal__form-shops-info-row-name">
+                    <p>Телефон:</p>
+                  </div>
+                  <div class="modal__form-shops-info-row-value">
+                    <p>+7 (499) 350-58-45</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="modal__form-shops-item">
+              <div class="modal__form-shops-title">
+                <p>Магазин в ТЦ "Неочень уникальный, который на Юго-Западе"</p>
+              </div>
+              <div class="modal__form-shops-info">
+                <div class="modal__form-shops-info-row">
+                  <div class="modal__form-shops-info-row-name">
+                    <p>Адрес:</p>
+                  </div>
+                  <div class="modal__form-shops-info-row-value">
+                    <p>Москва, ул. Пушечная 3</p>
+                  </div>
+                </div>
+                <div class="modal__form-shops-info-row">
+                  <div class="modal__form-shops-info-row-name">
+                    <p>График работы:</p>
+                  </div>
+                  <div class="modal__form-shops-info-row-value">
+                    <p>Ежедневно с 11:00 до 21:00</p>
+                  </div>
+                </div>
+                <div class="modal__form-shops-info-row">
+                  <div class="modal__form-shops-info-row-name">
+                    <p>Телефон:</p>
+                  </div>
+                  <div class="modal__form-shops-info-row-value">
+                    <p>+7 (499) 350-58-45</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="modal__form-shops-item">
+              <div class="modal__form-shops-title">
+                <p>Магазин в ТЦ "Неочень уникальный, который на Юго-Западе"</p>
+              </div>
+              <div class="modal__form-shops-info">
+                <div class="modal__form-shops-info-row">
+                  <div class="modal__form-shops-info-row-name">
+                    <p>Адрес:</p>
+                  </div>
+                  <div class="modal__form-shops-info-row-value">
+                    <p>Москва, ул. Пушечная 3</p>
+                  </div>
+                </div>
+                <div class="modal__form-shops-info-row">
+                  <div class="modal__form-shops-info-row-name">
+                    <p>График работы:</p>
+                  </div>
+                  <div class="modal__form-shops-info-row-value">
+                    <p>Ежедневно с 11:00 до 21:00</p>
+                  </div>
+                </div>
+                <div class="modal__form-shops-info-row">
+                  <div class="modal__form-shops-info-row-name">
+                    <p>Телефон:</p>
+                  </div>
+                  <div class="modal__form-shops-info-row-value">
+                    <p>+7 (499) 350-58-45</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="modal__form-shops-item">
+              <div class="modal__form-shops-title">
+                <p>Магазин в ТЦ "Неочень уникальный, который на Юго-Западе"</p>
+              </div>
+              <div class="modal__form-shops-info">
+                <div class="modal__form-shops-info-row">
+                  <div class="modal__form-shops-info-row-name">
+                    <p>Адрес:</p>
+                  </div>
+                  <div class="modal__form-shops-info-row-value">
+                    <p>Москва, ул. Пушечная 3</p>
+                  </div>
+                </div>
+                <div class="modal__form-shops-info-row">
+                  <div class="modal__form-shops-info-row-name">
+                    <p>График работы:</p>
+                  </div>
+                  <div class="modal__form-shops-info-row-value">
+                    <p>Ежедневно с 11:00 до 21:00</p>
+                  </div>
+                </div>
+                <div class="modal__form-shops-info-row">
+                  <div class="modal__form-shops-info-row-name">
+                    <p>Телефон:</p>
+                  </div>
+                  <div class="modal__form-shops-info-row-value">
+                    <p>+7 (499) 350-58-45</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="modal__form-shops-item">
+              <div class="modal__form-shops-title">
+                <p>Магазин в ТЦ "Неочень уникальный, который на Юго-Западе"</p>
+              </div>
+              <div class="modal__form-shops-info">
+                <div class="modal__form-shops-info-row">
+                  <div class="modal__form-shops-info-row-name">
+                    <p>Адрес:</p>
+                  </div>
+                  <div class="modal__form-shops-info-row-value">
+                    <p>Москва, ул. Пушечная 3</p>
+                  </div>
+                </div>
+                <div class="modal__form-shops-info-row">
+                  <div class="modal__form-shops-info-row-name">
+                    <p>График работы:</p>
+                  </div>
+                  <div class="modal__form-shops-info-row-value">
+                    <p>Ежедневно с 11:00 до 21:00</p>
+                  </div>
+                </div>
+                <div class="modal__form-shops-info-row">
+                  <div class="modal__form-shops-info-row-name">
+                    <p>Телефон:</p>
+                  </div>
+                  <div class="modal__form-shops-info-row-value">
+                    <p>+7 (499) 350-58-45</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="modal__form-shops-item">
+              <div class="modal__form-shops-title">
+                <p>Магазин в ТЦ "Неочень уникальный, который на Юго-Западе"</p>
+              </div>
+              <div class="modal__form-shops-info">
+                <div class="modal__form-shops-info-row">
+                  <div class="modal__form-shops-info-row-name">
+                    <p>Адрес:</p>
+                  </div>
+                  <div class="modal__form-shops-info-row-value">
+                    <p>Москва, ул. Пушечная 3</p>
+                  </div>
+                </div>
+                <div class="modal__form-shops-info-row">
+                  <div class="modal__form-shops-info-row-name">
+                    <p>График работы:</p>
+                  </div>
+                  <div class="modal__form-shops-info-row-value">
+                    <p>Ежедневно с 11:00 до 21:00</p>
+                  </div>
+                </div>
+                <div class="modal__form-shops-info-row">
+                  <div class="modal__form-shops-info-row-name">
+                    <p>Телефон:</p>
+                  </div>
+                  <div class="modal__form-shops-info-row-value">
+                    <p>+7 (499) 350-58-45</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="modal__form-shops-item">
+              <div class="modal__form-shops-title">
+                <p>Магазин в ТЦ "Неочень уникальный, который на Юго-Западе"</p>
+              </div>
+              <div class="modal__form-shops-info">
+                <div class="modal__form-shops-info-row">
+                  <div class="modal__form-shops-info-row-name">
+                    <p>Адрес:</p>
+                  </div>
+                  <div class="modal__form-shops-info-row-value">
+                    <p>Москва, ул. Пушечная 3</p>
+                  </div>
+                </div>
+                <div class="modal__form-shops-info-row">
+                  <div class="modal__form-shops-info-row-name">
+                    <p>График работы:</p>
+                  </div>
+                  <div class="modal__form-shops-info-row-value">
+                    <p>Ежедневно с 11:00 до 21:00</p>
+                  </div>
+                </div>
+                <div class="modal__form-shops-info-row">
+                  <div class="modal__form-shops-info-row-name">
+                    <p>Телефон:</p>
+                  </div>
+                  <div class="modal__form-shops-info-row-value">
+                    <p>+7 (499) 350-58-45</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--end Modal-->
+    <!--Scripts-->
+    <script src="//vk.com/js/api/openapi.js?151"></script>
+    <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="/libs/jquery-ui/jquery-ui.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+    <script src="/libs/masked-input/jquery.maskedinput.min.js"></script>
+    <script src="/js/common.js"></script>
+    <!--end Scripts-->
+  </body>
+</html>
